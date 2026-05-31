@@ -2,9 +2,9 @@
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
   const priceElement = product.querySelector('.price span');
-  const price = Number(priceElement.innerText); // mətn olaraq "25.00"-ı götürüb rəqəm edir
+  const price = Number(priceElement.innerText);
   const quantityElement = product.querySelector('.quantity input');
-  const quantity = Number(quantityElement.value); // inputun içindəki sayı rəqəm edir
+  const quantity = Number(quantityElement.value); 
   const subtotalPrice = price * quantity;
   const subtotalElement = product.querySelector('.subtotal span');
   subtotalElement.innerText = subtotalPrice;
